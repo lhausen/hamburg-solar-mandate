@@ -1,0 +1,18 @@
+DiD Analysis — privat solar — 05__per_km2__privat__start2015 / placebo_t2021
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: anzahl_anlagen / flaeche_km2 (per km²)  |  Years: 2015–2022
+Fake treatment onset: 2021/2022
+Ref year (event study): 2020
+
+Pre-trend Joint Wald Test
+==================================================
+  H0: all pre-period treat×year coefficients = 0
+  Pre-period dummies tested: 5
+  Variables: treat_x_2015, treat_x_2016, treat_x_2017, treat_x_2018, treat_x_2019
+
+  Chi² (5 df):  5.838   p = 0.3223
+  F    (5, 54): 1.168   p = 0.3371   (denominator df = G−1 clusters)
+
+  Interpretation:
+    p > 0.1 → fail to reject parallel trends (desired)
+    p < 0.1 → evidence of pre-existing differential trends (concern)

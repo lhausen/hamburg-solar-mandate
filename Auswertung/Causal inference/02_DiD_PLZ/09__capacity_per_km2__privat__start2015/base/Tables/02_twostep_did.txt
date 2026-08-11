@@ -1,0 +1,21 @@
+DiD Analysis — privat solar — 09__capacity_per_km2__privat__start2015 / base
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: netto_kw (kW) / flaeche_km2 (per km²)  |  Years: 2015–2025
+Ref year (event study): 2022
+
+Two-step DiD  —  Post-2023 effect  +  Additional post-2024 effect
+==================================================================
+  N obs:         605
+  N entities:    55.0
+  R² (within):   0.0777
+  Outcome:       netto_kw (kW) / flaeche_km2 (per km²)
+
+  Variable                     Coef        SE        t        p  95% CI
+  ------------------------------------------------------------------------
+  treat_x_t1                  7.160     7.918     0.90   0.3663  [-8.394, 22.714] 
+  treat_x_t2                 10.685     3.721     2.87   0.0043  [3.374, 17.995] ***
+
+  *** p<0.01  ** p<0.05  * p<0.1
+  SE clustered at PLZ level. PLZ + year two-way FE.
+
+  Note: T1 (new construction, 2023) and T2 (roof renovation, 2024) are not separately identified — registration lag causes the delayed T1 effect to overlap the T2 onset. The second coefficient is a post-2024 increment, not a renovation-specific effect.

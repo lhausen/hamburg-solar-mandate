@@ -1,0 +1,2 @@
+Spec,Label,T0 (time_id),T0 Year,Pre-RMSPE,Post-RMSPE,Ratio,Mean Post-Gap
+baseline_annual,"Annual, baseline (T0 = 2023)",9,2023,0.317096,3.867422,12.2,-3.747604

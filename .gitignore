@@ -1,0 +1,5 @@
+__pycache__/
+.DS_Store
+Daten/Solardaten/
+*.zip
+Auswertung/Panels/A_deutschland_plz_monat_operatortyp.csv

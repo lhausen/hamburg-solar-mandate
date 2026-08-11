@@ -1,0 +1,20 @@
+DiD Analysis — privat solar — 05__per_km2__privat__start2015 / placebo_t2021
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: anzahl_anlagen / flaeche_km2 (per km²)  |  Years: 2015–2022
+Fake treatment onset: 2021/2022
+Ref year (event study): 2020
+
+Wild Cluster Bootstrap — Basic DiD coefficient (Fake Post-2021 effect)
+============================================================
+  Method:     Restricted wild cluster bootstrap (WCR),
+              Rademacher weights, cluster = PLZ
+  Replications: 999
+
+  Observed t-stat:  1.623
+  Bootstrap p-value (two-sided): 0.1111
+
+  Note: standard clustered SE p-value is in 01_basic_did.txt; its
+  t-stat differs slightly (small-sample corrections, see docstring).
+  Caveat: clustering treats PLZs as independent policy draws, but
+  treatment is assigned at the Bundesland level (1 treated state).
+  See thesis discussion of inference with few treated clusters.
