@@ -100,7 +100,7 @@ ax1.plot(hh.index,   hh.values,   color=C_HH,   lw=2.4, label="Hamburg border PL
 ax1.plot(ctrl.index, ctrl.values, color=C_CTRL, lw=2.0, linestyle="--",
          label="Control border PLZs")
 
-for xd, lbl in [(MANDATE1, "Neubau\nmandate"), (MANDATE2, "Bestand\nmandate")]:
+for xd, lbl in [(MANDATE1, "First mandate\nstep"), (MANDATE2, "Second mandate\nstep")]:
     ax1.axvline(xd, color=C_VL, lw=1.3, linestyle=":", zorder=2)
     ax1.text(xd + pd.Timedelta(days=50), ax1.get_ylim()[1] * 0.99,
              lbl, ha="left", va="top", fontsize=8, color=C_VL)

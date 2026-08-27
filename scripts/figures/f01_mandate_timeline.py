@@ -152,7 +152,7 @@ legend_handles = [
     mpatches.Patch(facecolor=C_FULL, label="Commercial + private new construction (score 2)"),
 ]
 ax.legend(handles=legend_handles, loc="lower right", fontsize=9, framealpha=0.95,
-          title="mandate_score", title_fontsize=9)
+          title="Mandate coverage", title_fontsize=9)
 
 ax.set_title(
     "Solar Mandate Index by Bundesland, 2022–2026",

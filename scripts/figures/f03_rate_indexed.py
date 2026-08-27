@@ -89,7 +89,7 @@ l_avg, = ax.plot(germany_avg_idx_win.index, germany_avg_idx_win.values, color=C_
 
 ax.axhline(100, color="#999999", lw=1.0, ls=":", zorder=2)
 
-for xyr, lbl in [(2023, "HH Neubau\nmandate"), (2024, "HH Bestand\nmandate")]:
+for xyr, lbl in [(2023, "HH mandate\nstep 1"), (2024, "HH mandate\nstep 2")]:
     ax.axvline(xyr, color=C_VLINE, lw=1.2, linestyle=":", zorder=3)
     ax.text(xyr + 0.05, ax.get_ylim()[1] * 0.99, lbl,
             ha="left", va="top", fontsize=7.5, color=C_VLINE)

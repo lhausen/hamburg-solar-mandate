@@ -65,7 +65,7 @@ b1 = ax.bar(x - w/2, annual["solar_privat"], width=w, color=C_SOLAR,
 b2 = ax.bar(x + w/2, annual["completions"], width=w, color=C_BUILD,
             label="New residential buildings completed", zorder=3)
 
-for xyr, lbl in [(2023, "Neubau\nmandate"), (2024, "Bestand\nmandate")]:
+for xyr, lbl in [(2023, "First mandate\nstep"), (2024, "Second mandate\nstep")]:
     xi = YEARS.index(xyr) - 0.5
     ax.axvline(xi, color=C_VLINE, lw=1.2, linestyle=":", zorder=2)
     ax.text(xi + 0.05, ax.get_ylim()[1], lbl, va="top", fontsize=8, color=C_VLINE)

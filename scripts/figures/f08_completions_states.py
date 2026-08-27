@@ -81,7 +81,7 @@ for state in df["bundesland"].unique():
 hh = df[df["bundesland"] == "Hamburg"].set_index("year")["completions_wohngebaeude"]
 l_hh, = ax.plot(hh.index, hh.values, color=C_HH, lw=2.8, zorder=10, label="Hamburg")
 
-for xyr, lbl in [(2023, "HH Neubau\nmandate"), (2024, "HH Bestand\nmandate")]:
+for xyr, lbl in [(2023, "HH mandate\nstep 1"), (2024, "HH mandate\nstep 2")]:
     ax.axvline(xyr, color=C_VLINE, lw=1.2, linestyle=":", zorder=3)
     ax.text(xyr + 0.05, ax.get_ylim()[1], lbl,
             ha="left", va="top", fontsize=7.5, color=C_VLINE)
