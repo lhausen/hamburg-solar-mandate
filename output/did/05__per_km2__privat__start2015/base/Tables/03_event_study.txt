@@ -1,0 +1,27 @@
+DiD Analysis — privat solar — 05__per_km2__privat__start2015 / base
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: anzahl_anlagen / flaeche_km2 (per km²)  |  Years: 2015–2025
+Ref year (event study): 2022
+
+Event Study  —  treated × year dummies
+==================================================================
+  N obs:         605
+  N entities:    55.0
+  R² (within):   0.0930
+  Outcome:       anzahl_anlagen / flaeche_km2 (per km²)
+
+  Variable                     Coef        SE        t        p  95% CI
+  ------------------------------------------------------------------------
+  treat_x_2015               -0.317     0.358    -0.89   0.3757  [-1.019, 0.385] 
+  treat_x_2016               -0.203     0.352    -0.58   0.5636  [-0.895, 0.488] 
+  treat_x_2017               -0.244     0.341    -0.72   0.4744  [-0.914, 0.426] 
+  treat_x_2018               -0.233     0.333    -0.70   0.4838  [-0.888, 0.421] 
+  treat_x_2019               -0.133     0.317    -0.42   0.6760  [-0.756, 0.490] 
+  treat_x_2020                0.011     0.288     0.04   0.9698  [-0.555, 0.577] 
+  treat_x_2021                0.113     0.233     0.48   0.6280  [-0.345, 0.571] 
+  treat_x_2023                1.090     0.818     1.33   0.1833  [-0.517, 2.697] 
+  treat_x_2024                1.476     0.607     2.43   0.0154  [0.284, 2.669] **
+  treat_x_2025                2.926     0.629     4.65   0.0000  [1.690, 4.161] ***
+
+  *** p<0.01  ** p<0.05  * p<0.1
+  SE clustered at PLZ level. PLZ + year two-way FE.

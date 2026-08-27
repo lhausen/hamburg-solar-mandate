@@ -1,0 +1,19 @@
+DiD Analysis — privat solar — 01__count_anlagen__privat__start2015 / placebo_t2021
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: anzahl_anlagen (raw)  |  Years: 2015–2022
+Fake treatment onset: 2021/2022
+Ref year (event study): 2020
+
+Basic DiD  —  treated × Fake Post-2021 effect
+==================================================================
+  N obs:         440
+  N entities:    55.0
+  R² (within):   0.1930
+  Outcome:       anzahl_anlagen (raw)
+
+  Variable                     Coef        SE        t        p  95% CI
+  ------------------------------------------------------------------------
+  treat_x_t1                -17.757     4.203    -4.22   0.0000  [-26.021, -9.493] ***
+
+  *** p<0.01  ** p<0.05  * p<0.1
+  SE clustered at PLZ level. PLZ + year two-way FE.

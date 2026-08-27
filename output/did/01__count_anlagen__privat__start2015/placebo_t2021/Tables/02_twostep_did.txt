@@ -1,0 +1,22 @@
+DiD Analysis — privat solar — 01__count_anlagen__privat__start2015 / placebo_t2021
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: anzahl_anlagen (raw)  |  Years: 2015–2022
+Fake treatment onset: 2021/2022
+Ref year (event study): 2020
+
+Two-step DiD  —  Fake Post-2021 effect  +  Fake Additional post-2022 effect
+==================================================================
+  N obs:         440
+  N entities:    55.0
+  R² (within):   0.2149
+  Outcome:       anzahl_anlagen (raw)
+
+  Variable                     Coef        SE        t        p  95% CI
+  ------------------------------------------------------------------------
+  treat_x_t1                -12.579     3.930    -3.20   0.0015  [-20.307, -4.851] ***
+  treat_x_t2                -10.356     3.765    -2.75   0.0062  [-17.760, -2.953] ***
+
+  *** p<0.01  ** p<0.05  * p<0.1
+  SE clustered at PLZ level. PLZ + year two-way FE.
+
+  Note: T1 (new construction, 2023) and T2 (roof renovation, 2024) are not separately identified — registration lag causes the delayed T1 effect to overlap the T2 onset. The second coefficient is a post-2024 increment, not a renovation-specific effect.

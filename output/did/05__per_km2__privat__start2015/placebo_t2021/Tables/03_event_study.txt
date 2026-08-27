@@ -1,0 +1,25 @@
+DiD Analysis — privat solar — 05__per_km2__privat__start2015 / placebo_t2021
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: anzahl_anlagen / flaeche_km2 (per km²)  |  Years: 2015–2022
+Fake treatment onset: 2021/2022
+Ref year (event study): 2020
+
+Event Study  —  treated × year dummies
+==================================================================
+  N obs:         440
+  N entities:    55.0
+  R² (within):   0.0205
+  Outcome:       anzahl_anlagen / flaeche_km2 (per km²)
+
+  Variable                     Coef        SE        t        p  95% CI
+  ------------------------------------------------------------------------
+  treat_x_2015               -0.328     0.158    -2.07   0.0391  [-0.639, -0.016] **
+  treat_x_2016               -0.214     0.150    -1.43   0.1543  [-0.510, 0.081] 
+  treat_x_2017               -0.255     0.182    -1.40   0.1624  [-0.614, 0.103] 
+  treat_x_2018               -0.244     0.170    -1.44   0.1518  [-0.579, 0.090] 
+  treat_x_2019               -0.144     0.138    -1.04   0.3004  [-0.416, 0.129] 
+  treat_x_2021                0.102     0.166     0.62   0.5381  [-0.223, 0.428] 
+  treat_x_2022               -0.011     0.294    -0.04   0.9704  [-0.588, 0.566] 
+
+  *** p<0.01  ** p<0.05  * p<0.1
+  SE clustered at PLZ level. PLZ + year two-way FE.

@@ -1,0 +1,22 @@
+DiD Analysis — privat solar — 01__count_anlagen__privat__start2015 / placebo_t2021
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: anzahl_anlagen (raw)  |  Years: 2015–2022
+Fake treatment onset: 2021/2022
+Ref year (event study): 2020
+
+Linear Combination Test — Fake Total post-2022 effect (Post-2021 + additional)
+==================================================================
+  H0: treat_x_t1 + treat_x_t2 = 0
+  Outcome: anzahl_anlagen (raw)
+  Combines: Fake Post-2021 effect  +  Fake Additional post-2022 effect
+
+  Estimate:  -22.935
+  SE:        5.202
+  t(376):   -4.41   p = 0.0000  ***
+  95% CI:    [-33.164, -12.705]
+
+  Interpretation: combined treatment effect once both mandate steps
+  are active (from the two-step model in 02_twostep_did.txt).
+
+  *** p<0.01  ** p<0.05  * p<0.1
+  SE via delta method on the two-step model's clustered covariance.

@@ -1,0 +1,21 @@
+DiD Analysis — privat solar — 05__per_km2__privat__start2015 / asinh
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: asinh(anzahl_anlagen / flaeche_km2 (per km²))  |  Years: 2015–2025
+Ref year (event study): 2022
+
+Linear Combination Test — Total post-2024 effect (Post-2023 + additional)
+==================================================================
+  H0: treat_x_t1 + treat_x_t2 = 0
+  Outcome: asinh(anzahl_anlagen / flaeche_km2 (per km²))
+  Combines: Post-2023 effect  +  Additional post-2024 effect
+
+  Estimate:  0.311
+  SE:        0.107
+  t(538):   2.90   p = 0.0039  ***
+  95% CI:    [0.100, 0.521]
+
+  Interpretation: combined treatment effect once both mandate steps
+  are active (from the two-step model in 02_twostep_did.txt).
+
+  *** p<0.01  ** p<0.05  * p<0.1
+  SE via delta method on the two-step model's clustered covariance.

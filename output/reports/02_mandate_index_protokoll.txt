@@ -1,0 +1,130 @@
+========================================================================
+MANDATE INDEX PROTOCOL — mandate_index_monthly.csv
+========================================================================
+
+Generated:   2026-08-27 20:19
+Source:      Daten/Quellen/240611_BSW-Uebersicht_Solarpflichten_Bundeslaender_Langfassungen.pdf
+Coverage:    All 16 Bundesländer, 2015-01 to 2026-12
+
+Two binary mandate dimensions:
+  mandate_commercial   PV obligation for commercial/Nichtwohngebäude new builds
+  mandate_private      PV obligation for private/Wohngebäude new builds
+  mandate_score        Sum of the two (0–2)
+
+source_flag values:
+  'pdf'      — date verified in BSW PDF (June 2024 edition)
+  'external' — date from source external to BSW PDF
+  'absent'   — state not in BSW PDF; no known mandate encoded
+
+========================================================================
+STATE-BY-STATE MANDATE DATES
+========================================================================
+
+  Baden-Württemberg
+    commercial_neubau : 2022-01-01
+    private_neubau    : 2022-05-01
+    source            : Umweltministerium BW, Photovoltaikpflicht-barrierefrei.pdf (Daten/Quellen/BW/)
+
+  Bayern
+    commercial_neubau : 2023-03-01
+    private_neubau    : —
+    source            : Art. 44a BayBO, primary PDF (Daten/Quellen/Bayern/)
+
+  Berlin
+    commercial_neubau : 2023-01-01
+    private_neubau    : 2023-01-01
+    source            : SolarG BE § 3(1), GVBl. 2021 Nr. 54 (Daten/Quellen/Berlin/)
+
+  Brandenburg
+    commercial_neubau : 2024-06-01
+    private_neubau    : —
+    source            : BbgBO § 32a, GVBl. I 2023 Nr. 18 (Daten/Quellen/Brandenburg/)
+
+  Bremen
+    commercial_neubau : 2025-07-01
+    private_neubau    : 2025-07-01
+    source            : BremSolarG § 2, Brem.GBl. 2024 S. 589 (Daten/Quellen/Bremen/)
+
+  Hamburg
+    commercial_neubau : 2023-01-01
+    private_neubau    : 2023-01-01
+    source            : HmbKliSchG § 16 + § 16a, Fassung 13.12.2023 (Daten/Quellen/Hamburg/)
+
+  Hessen
+    commercial_neubau : —
+    private_neubau    : —
+    source            : HEG § 9a + § 12, GVBl. 2023 S. 582 (Daten/Quellen/Hessen/)
+
+  Mecklenburg-Vorpommern
+    commercial_neubau : —
+    private_neubau    : —
+    source            : Not in BSW PDF; no known mandate as of 2024-06
+
+  Niedersachsen
+    commercial_neubau : 2023-01-01
+    private_neubau    : 2025-01-01
+    source            : NBauO § 32a, 5 versions (Daten/Quellen/Niedersachen/)
+
+  Nordrhein-Westfalen
+    commercial_neubau : 2024-01-01
+    private_neubau    : 2025-01-01
+    source            : BauO NRW § 42a + SAN-VO NRW, GV.NRW 2024 (Daten/Quellen/NRW/)
+
+  Rheinland-Pfalz
+    commercial_neubau : 2023-01-01
+    private_neubau    : —
+    source            : LSolarG § 2 + § 4, GVBl. 2021 S. 550 (Daten/Quellen/Rheinland-Pfalz/)
+
+  Saarland
+    commercial_neubau : —
+    private_neubau    : —
+    source            : Not in BSW PDF; no known mandate as of 2024-06
+
+  Sachsen
+    commercial_neubau : —
+    private_neubau    : —
+    source            : Not in BSW PDF; no known mandate as of 2024-06
+
+  Sachsen-Anhalt
+    commercial_neubau : —
+    private_neubau    : —
+    source            : Not in BSW PDF; no known mandate as of 2024-06
+
+  Schleswig-Holstein
+    commercial_neubau : 2023-01-01
+    private_neubau    : 2026-04-01
+    source            : EWKG § 26 + § 27, Fassung 25.03.2025 (Daten/Quellen/SH/)
+
+  Thüringen
+    commercial_neubau : —
+    private_neubau    : —
+    source            : Not in BSW PDF; no known mandate as of 2024-06
+
+========================================================================
+IDENTIFICATION NOTES FOR THESIS
+========================================================================
+
+Hamburg is unique in mandating PRIVATE Wohngebäude from Jan 2023 AND
+imposing Bestand obligations (roof renovation) from Jan 2024.
+
+States with private_neubau mandate (treatment-like for private sector):
+  Baden-Württemberg  (2022-05-01)
+  Berlin  (2023-01-01)
+  Bremen  (2025-07-01)
+  Hamburg  (2023-01-01)
+  Niedersachsen  (2025-01-01)
+  Nordrhein-Westfalen  (2025-01-01)
+  Schleswig-Holstein  (2026-04-01)
+
+Control group states (SH, NI Landkreise surrounding Hamburg):
+  Schleswig-Holstein  commercial + bestand (Nichtwohn) from 2023-01-01
+                      NO private mandate — clean control for Hamburg private effect
+  Niedersachsen       commercial from 2023-01-01; private from 2025-01-01
+                      NO Bestand — clean control for Jan 2024 treatment date
+
+Berlin: co-treated (private mandate Jan 2023). Exclude from clean control group.
+Baden-Württemberg: private mandate May 2022, commercial Jan 2022 (pre-Hamburg).
+  Source: Umweltministerium BW flyer (confirmed primary source). Exclude or use
+  as treated comparison — pre-dates Hamburg treatment window.
+
+========================================================================

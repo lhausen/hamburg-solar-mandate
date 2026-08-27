@@ -1,0 +1,18 @@
+DiD Analysis — privat solar — 05__per_km2__privat__start2015 / asinh
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: asinh(anzahl_anlagen / flaeche_km2 (per km²))  |  Years: 2015–2025
+Ref year (event study): 2022
+
+Basic DiD  —  treated × Post-2023 effect
+==================================================================
+  N obs:         605
+  N entities:    55.0
+  R² (within):   0.0303
+  Outcome:       asinh(anzahl_anlagen / flaeche_km2 (per km²))
+
+  Variable                     Coef        SE        t        p  95% CI
+  ------------------------------------------------------------------------
+  treat_x_t1                  0.221     0.106     2.09   0.0369  [0.013, 0.429] **
+
+  *** p<0.01  ** p<0.05  * p<0.1
+  SE clustered at PLZ level. PLZ + year two-way FE.

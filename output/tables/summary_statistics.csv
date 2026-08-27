@@ -1,0 +1,17 @@
+Variable,Group,Period,N,Mean,SD
+Private installations / PLZ-year,Hamburg border PLZs,Pre-mandate (2015–2022),248,8.173387096774194,10.21777928819873
+Private installations / PLZ-year,Hamburg border PLZs,Post-mandate (2023–2025),93,66.6774193548387,41.05911996619407
+Private installations / PLZ-year,Control border PLZs,Pre-mandate (2015–2022),192,17.53125,20.660280391705104
+Private installations / PLZ-year,Control border PLZs,Post-mandate (2023–2025),72,130.38888888888889,77.76446118954439
+Private installations per km²,Hamburg border PLZs,Pre-mandate (2015–2022),248,0.8293877357606247,0.9808183311932497
+Private installations per km²,Hamburg border PLZs,Post-mandate (2023–2025),93,6.919992743436702,4.064370581493843
+Private installations per km²,Control border PLZs,Pre-mandate (2015–2022),192,0.6412146406429707,0.7906924858366987
+Private installations per km²,Control border PLZs,Post-mandate (2023–2025),72,4.775322782198992,3.0549747181764184
+"Avg. system size, private (kW)",Hamburg border PLZs,Pre-mandate (2015–2022),226,7.132665022200296,3.983562732159413
+"Avg. system size, private (kW)",Hamburg border PLZs,Post-mandate (2023–2025),93,8.45204966940816,1.543855414571495
+"Avg. system size, private (kW)",Control border PLZs,Pre-mandate (2015–2022),189,7.70653238265003,3.850860354898093
+"Avg. system size, private (kW)",Control border PLZs,Post-mandate (2023–2025),72,8.816612270984235,1.4298618509063172
+Private share of installations (%),Hamburg border PLZs,Pre-mandate (2015–2022),230,89.65059708093763,20.688393872053535
+Private share of installations (%),Hamburg border PLZs,Post-mandate (2023–2025),93,93.33232992173389,11.479110302777135
+Private share of installations (%),Control border PLZs,Pre-mandate (2015–2022),191,90.24128686327077,15.640455925365838
+Private share of installations (%),Control border PLZs,Post-mandate (2023–2025),72,94.59895203546957,4.162421302949805

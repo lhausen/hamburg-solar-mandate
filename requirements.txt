@@ -1,0 +1,11 @@
+# Tested with Python 3.12. Exact versions used for the shipped outputs are
+# noted after each package; anything reasonably current should reproduce them.
+pandas        # 2.3
+numpy         # 2.x
+scipy         # 1.x
+matplotlib    # 3.10
+linearmodels  # 7.0   (DiD estimation, scripts/05_run_did.py)
+pysyncon      # 1.5   (synthetic control, scripts/06_run_scm.py)
+geopandas     # 1.x   (maps, scripts/figures/f05 + f06)
+# Only needed for --from-raw:
+# open_mastr   (download of the MaStR bulk export, see data/raw/README.md)

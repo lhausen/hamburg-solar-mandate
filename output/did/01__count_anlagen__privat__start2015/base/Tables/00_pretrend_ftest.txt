@@ -1,0 +1,17 @@
+DiD Analysis — privat solar — 01__count_anlagen__privat__start2015 / base
+Treatment: Hamburg Grenze  |  Control: SH + NI Grenze
+Outcome: anzahl_anlagen (raw)  |  Years: 2015–2025
+Ref year (event study): 2022
+
+Pre-trend Joint Wald Test
+==================================================
+  H0: all pre-period treat×year coefficients = 0
+  Pre-period dummies tested: 7
+  Variables: treat_x_2015, treat_x_2016, treat_x_2017, treat_x_2018, treat_x_2019, treat_x_2020, treat_x_2021
+
+  Chi² (7 df):  32.578   p = 0.0000
+  F    (7, 54): 4.654   p = 0.0004   (denominator df = G−1 clusters)
+
+  Interpretation:
+    p > 0.1 → fail to reject parallel trends (desired)
+    p < 0.1 → evidence of pre-existing differential trends (concern)
