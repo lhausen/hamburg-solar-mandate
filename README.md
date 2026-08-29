@@ -40,7 +40,7 @@ figures into `output/`. Expected headline results (thesis chapter 5):
 | Effect relative to the counterfactual level | 39.4% |
 | Two-step: post-2023 / additional post-2024 | 1.216 / 1.111 |
 | Total post-2024 effect | 2.327 (p = 0.004) |
-| Pre-trend joint test | F(7,54) = 1.12, p = 0.363 |
+| Pre-trend joint test | p = 0.346 |
 | Wild cluster bootstrap p (main coefficient) | 0.016 |
 | Placebo (onset 2021) | 0.243 (p = 0.311) |
 | Capacity outcome (kW per km² and year) | 14.290 (p = 0.031), 34.9% |
