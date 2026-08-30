@@ -41,7 +41,6 @@ figures into `output/`. Expected headline results (thesis chapter 5):
 | Two-step: post-2023 / additional post-2024 | 1.216 / 1.111 |
 | Total post-2024 effect | 2.327 (p = 0.004) |
 | Pre-trend joint test | p = 0.346 |
-| Wild cluster bootstrap p (main coefficient) | 0.016 |
 | Placebo (onset 2021) | 0.243 (p = 0.311) |
 | Capacity outcome (kW per km² and year) | 14.290 (p = 0.031), 34.9% |
 | Synthetic control | 100% Bremen, pre-RMSPE 0.370, mean post gap -3.91 |
@@ -83,10 +82,11 @@ the unfiltered export: the sample-construction table
 `05_run_did.py` estimates exactly the models reported in the thesis: private
 installations per km² (main model, plus a placebo with treatment onset moved
 to 2021 and an asinh variant), installed capacity per km² (plus placebo), and
-the unnormalised count model, which fails the pre-trend test and is reported
+the unnormalized count model, which fails the pre-trend test and is reported
 to motivate the normalised outcome. Standard errors are clustered at
 postal-code level; the wild cluster bootstrap (Rademacher weights, 999
-replications, seed 42) is run for the main coefficient.
+replications, seed 42) is run for the main coefficient as an additional
+diagnostic (computed by the pipeline, not reported in the thesis).
 
 `06_run_scm.py` estimates the synthetic control for Hamburg (donor pool: 13
 Bundesländer, excluding Baden-Württemberg and Berlin) on private
